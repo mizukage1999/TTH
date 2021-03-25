@@ -50,7 +50,8 @@
             if ($username == "" || $password =="") {
                 echo "Username hoặc Password không được để trống!";
             }else if($username == "admin" || $password =="admin") {
-                  echo "dang nhap thanh cong!";
+               header('Location: succes.html');
+
             }else{
                echo "dang nhap that bai";
             }
