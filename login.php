@@ -33,7 +33,7 @@
          </tr>
          <tr>
             <td colspan="2" align="center">
-            <input type="submit" name="btn_DangKi" value="Sign In">
+            <input type="submit" name="btn_dangnhap" value="Sign In">
             </td>
          </tr>
       </table>
@@ -42,3 +42,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
 </body>
 </html>
+<?php
+        
+        if (isset($_POST["btn_dangnhap"])) {
+            $username = $_POST["loginname"];
+            $password = $_POST["password"];
+            if ($username == "" || $password =="") {
+                echo "Username hoặc Password không được để trống!";
+            }else if($username == "admin" || $password =="admin") {
+                  echo "dang nhap thanh cong!";
+            }else{
+               echo "dang nhap that bai";
+            }
+                
+                   
+            
+        }
+     ?>
