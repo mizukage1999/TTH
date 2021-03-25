@@ -49,7 +49,7 @@
             $password = $_POST["password"];
             if ($username == "" || $password =="") {
                 echo "Username hoặc Password không được để trống!";
-            }else if($username == "admin" || $password =="admin") {
+            }else if($username == "admin" && $password =="admin") {
                header('Location: succes.html');
 
             }else{
